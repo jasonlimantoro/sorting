@@ -21,12 +21,11 @@ void merge(int *array, int first, int last)
         return;
     }
     int mid = (first + last) / 2;
-    int first2 = mid + 1, first1 = first, j = 0, comparisons = 0;
+    int first2 = mid + 1, first1 = first, j = 0;
     int sizeSubList = last - first + 1;
     int sortedSubList[sizeSubList];
     while (first1 <= mid && first2 <= last){
         // filling the sub-array
-        comparisons++;
         if (array[first1] < array[first2]){
             sortedSubList[j] = array[first1];
             first1++;
@@ -54,5 +53,4 @@ void merge(int *array, int first, int last)
     for (int k = 0; k < sizeSubList; ++k) {
         array[first + k] = sortedSubList[k];
     }
-    // printf("%d comparisons done\n", comparisons);
 }
