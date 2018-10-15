@@ -1,6 +1,0 @@
-Enter array size: 
-Enter 1000 elements: 
-Merge Sort
-Total comparisons done: 4932
-Total CPU time: 0.00018400 (seconds)
-
