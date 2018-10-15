@@ -13,6 +13,7 @@ Array of integers with size of 1k, 10k, 100k, and 1m with the following arrangem
 
 2. In the repository's directory, compile and run the source files. 
 ```
+mkdir bin
 gcc sorting.c insertionSort.c mergeSort.c -o bin/main
 ./bin/main
 ```
