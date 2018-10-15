@@ -3,4 +3,4 @@ project(sorting C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(sorting main.c mergeSort.c mergeSort.h)
+add_executable(sorting main.c mergeSort.c mergeSort.h insertionSort.c insertionSort.h)
