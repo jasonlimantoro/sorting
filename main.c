@@ -1,11 +1,16 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 #include "mergeSort.h"
 #include "insertionSort.h"
 
 int main()
 {
-    int size, *array, option;
+    int size, *array, option, comparisons = 0;
+    int *ptrComparisons = &comparisons;
+    clock_t start, end;
+    double cpu_used;
+
     printf("Enter array size: \n");
     scanf("%d", &size);
     array = malloc(sizeof(int) * size);
@@ -20,11 +25,22 @@ int main()
     switch (option){
         case 1:
             printf("Merge Sort\n");
-            mergeSort(array, 0 , size - 1);
+            start = clock();
+            mergeSort(array, 0, size - 1, ptrComparisons);
+            end = clock();
+            cpu_used = ((double) (end - start)) / (double) CLOCKS_PER_SEC;
+            printf("Total comparisons done: %d\n", comparisons);
+            printf("Total CPU time: %.8lf (seconds)\n", cpu_used);
             break;
+
         case 2:
             printf("Insertion sort\n");
-            insertionSort(array, size);
+            start = clock();
+            insertionSort(array, size, ptrComparisons);
+            end = clock();
+            cpu_used = ((double) (end - start)) / (double) CLOCKS_PER_SEC;
+            printf("Total comparisons done: %d\n", comparisons);
+            printf("Total CPU time: %.8lf (seconds)\n", cpu_used);
             break;
         default:
             printf("Not supported\n");

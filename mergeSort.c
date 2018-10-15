@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include "mergeSort.h"
 
-void mergeSort(int *array, int first, int last)
+void mergeSort(int *array, int first, int last, int *totalComparisons)
 {
     int mid = (first + last) / 2;
     if (first >= last){
         return;
     } else if (last - first > 1) {
-        mergeSort(array, first, mid);
-        mergeSort(array, mid + 1, last);
+        mergeSort(array, first, mid, totalComparisons);
+        mergeSort(array, mid + 1, last, totalComparisons);
     }
-    merge(array, first, last);
+    merge(array, first, last, totalComparisons);
 
 }
 
-void merge(int *array, int first, int last)
+void merge(int *array, int first, int last, int *totalComparisons)
 {
     // one or less element
     if (last - first <= 0){
@@ -26,6 +26,7 @@ void merge(int *array, int first, int last)
     int sortedSubList[sizeSubList];
     while (first1 <= mid && first2 <= last){
         // filling the sub-array
+        (*totalComparisons)++;
         if (array[first1] < array[first2]){
             sortedSubList[j] = array[first1];
             first1++;
