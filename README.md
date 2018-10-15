@@ -13,8 +13,8 @@ Array of integers with size of 1k, 10k, 100k, and 1m with the following arrangem
 
 2. In the repository's directory, compile and run the source files. 
 ```
-gcc sorting.c insertionSort.c mergeSort.c -o main
-./main
+gcc sorting.c insertionSort.c mergeSort.c -o bin/main
+./bin/main
 ```
 
 3. Choose the sorting algorithm you would like the test.
