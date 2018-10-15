@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include "insertionSort.h"
 
-void insertionSort(int *array, int size, int *totalComparisons)
+void insertionSort(int *array, int size, unsigned long int *totalComparisons)
 {
     for (int i = 1; i < size; ++i) {
         insert(array, i, array[i], totalComparisons);
     }
 }
 
-void insert(int *array, int index, int value, int *totalComparisons)
+void insert(int *array, int index, int value, unsigned long int *totalComparisons)
 {
     int position = index;
     while (position > 0){

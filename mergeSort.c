@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "mergeSort.h"
 
-void mergeSort(int *array, int first, int last, int *totalComparisons)
+void mergeSort(int *array, int first, int last, unsigned long int *totalComparisons)
 {
     int mid = (first + last) / 2;
     if (first >= last){
@@ -14,7 +14,7 @@ void mergeSort(int *array, int first, int last, int *totalComparisons)
 
 }
 
-void merge(int *array, int first, int last, int *totalComparisons)
+void merge(int *array, int first, int last, unsigned long int *totalComparisons)
 {
     // one or less element
     if (last - first <= 0){
