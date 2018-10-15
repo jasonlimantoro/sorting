@@ -11,14 +11,14 @@ void insertionSort(int *array, int size, int *totalComparisons)
 void insert(int *array, int index, int value, int *totalComparisons)
 {
     int position = index;
-    while (position >= 0){
+    while (position > 0){
+        (*totalComparisons)++;
         if (array[position - 1] > value){
             swap(array, position, position - 1);
             position--;
         } else {
             break;
         }
-        (*totalComparisons)++;
     }
 }
 
