@@ -39,7 +39,7 @@ int main()
             end = clock();
             cpu_used = ((double) (end - start)) / (double) CLOCKS_PER_SEC;
             printf("Total comparisons done: %lu\n", comparisons);
-            printf("Total CPU time: %.8lf (seconds)\n", cpu_used);
+            printf("Total CPU time: %.6lf (seconds)\n", cpu_used);
             break;
 
         case 2:
@@ -49,7 +49,7 @@ int main()
             end = clock();
             cpu_used = ((double) (end - start)) / (double) CLOCKS_PER_SEC;
             printf("Total comparisons done: %lu\n", comparisons);
-            printf("Total CPU time: %.8lf (seconds)\n", cpu_used);
+            printf("Total CPU time: %.6lf (seconds)\n", cpu_used);
             break;
         default:
             printf("Not supported\n");
