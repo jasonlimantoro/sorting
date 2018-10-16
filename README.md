@@ -11,17 +11,22 @@ Array of integers with size of 1k, 10k, 100k, and 1m with the following arrangem
 ## Usage
 1. Clone this repository
 
-2. In the repository's directory, compile and run the source files. 
+2. In the repository's directory, compile and run the source files.
+ 
+Compile:
 ```
-mkdir bin
-gcc sorting.c insertionSort.c mergeSort.c -o bin/main
-./bin/main
+gcc sorting.c insertionSort.c mergeSort.c -o main
+```
+> This will create an executable file called `main` in the project root directory.
+
+Run:
+```
+./main
 ```
 
 3. Choose the sorting algorithm you would like the test.
 
 3. You will see the log output in the `output/log_text.txt` file.
 
-4. Change the file input and output in `sorting.c` to try other test cases.
-
+4. Change the input and/or output files in `sorting.c` to try other test cases.
 
