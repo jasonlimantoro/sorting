@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <time.h>
 #include "array_seeder.h"
 
 int main()
@@ -146,7 +147,12 @@ void seedArray(int *array, int n, bool ascending)
 
 void shuffle(int *array, int n)
 {
+    time_t t;
     int random;
+
+    // Initialize RNG
+    srand((unsigned) time(&t));
+
     for (int j = 0; j < n; ++j){
         random = rand() % n;
         swap(array, j, random);
