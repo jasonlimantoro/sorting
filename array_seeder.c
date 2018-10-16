@@ -87,6 +87,131 @@ int main()
                     printf("Error\n");
             }
             break;
+        case 250000:
+            printf("1. Random\n");
+            printf("2. Ascending\n");
+            printf("3. Descending\n");
+            printf("Enter generation type: \n");
+            scanf("%d", &type);
+            switch (type){
+                case 1:
+                    freopen("./input/array_seed_twofifty_thousand_random.txt", "w", stdout);
+                    seedArray(seed, n, true);
+                    shuffle(seed, n);
+                    break;
+                case 2:
+                    freopen("./input/array_seed_twofifty_thousand_ascending.txt", "w", stdout);
+                    seedArray(seed, n, true);
+                    break;
+                case 3:
+                    freopen("./input/array_seed_twofifty_thousand_descending.txt", "w", stdout);
+                    seedArray(seed, n, false);
+                    break;
+                default:
+                    printf("Error\n");
+            }
+            break;
+
+        case 450000:
+            printf("1. Random\n");
+            printf("2. Ascending\n");
+            printf("3. Descending\n");
+            printf("Enter generation type: \n");
+            scanf("%d", &type);
+            switch (type){
+                case 1:
+                    freopen("./input/array_seed_fourfifty_thousand_random.txt", "w", stdout);
+                    seedArray(seed, n, true);
+                    shuffle(seed, n);
+                    break;
+                case 2:
+                    freopen("./input/array_seed_fourfifty_thousand_ascending.txt", "w", stdout);
+                    seedArray(seed, n, true);
+                    break;
+                case 3:
+                    freopen("./input/array_seed_fourfifty_thousand_descending.txt", "w", stdout);
+                    seedArray(seed, n, false);
+                    break;
+                default:
+                    printf("Error\n");
+            }
+            break;
+
+        case 650000:
+            printf("1. Random\n");
+            printf("2. Ascending\n");
+            printf("3. Descending\n");
+            printf("Enter generation type: \n");
+            scanf("%d", &type);
+            switch (type){
+                case 1:
+                    freopen("./input/array_seed_sixfifty_thousand_random.txt", "w", stdout);
+                    seedArray(seed, n, true);
+                    shuffle(seed, n);
+                    break;
+                case 2:
+                    freopen("./input/array_seed_sixfifty_thousand_ascending.txt", "w", stdout);
+                    seedArray(seed, n, true);
+                    break;
+                case 3:
+                    freopen("./input/array_seed_sixfifty_thousand_descending.txt", "w", stdout);
+                    seedArray(seed, n, false);
+                    break;
+                default:
+                    printf("Error\n");
+            }
+            break;
+
+        case 850000:
+            printf("1. Random\n");
+            printf("2. Ascending\n");
+            printf("3. Descending\n");
+            printf("Enter generation type: \n");
+            scanf("%d", &type);
+            switch (type){
+                case 1:
+                    freopen("./input/array_seed_eightfifty_thousand_random.txt", "w", stdout);
+                    seedArray(seed, n, true);
+                    shuffle(seed, n);
+                    break;
+                case 2:
+                    freopen("./input/array_seed_eightfifty_thousand_ascending.txt", "w", stdout);
+                    seedArray(seed, n, true);
+                    break;
+                case 3:
+                    freopen("./input/array_seed_eightfifty_thousand_descending.txt", "w", stdout);
+                    seedArray(seed, n, false);
+                    break;
+                default:
+                    printf("Error\n");
+            }
+            break;
+
+        case 950000:
+            printf("1. Random\n");
+            printf("2. Ascending\n");
+            printf("3. Descending\n");
+            printf("Enter generation type: \n");
+            scanf("%d", &type);
+            switch (type){
+                case 1:
+                    freopen("./input/array_seed_ninefifty_thousand_random.txt", "w", stdout);
+                    seedArray(seed, n, true);
+                    shuffle(seed, n);
+                    break;
+                case 2:
+                    freopen("./input/array_seed_ninefifty_thousand_ascending.txt", "w", stdout);
+                    seedArray(seed, n, true);
+                    break;
+                case 3:
+                    freopen("./input/array_seed_ninefifty_thousand_descending.txt", "w", stdout);
+                    seedArray(seed, n, false);
+                    break;
+                default:
+                    printf("Error\n");
+            }
+            break;
+
         case 1000000:
             printf("1. Random\n");
             printf("2. Ascending\n");
