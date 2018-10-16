@@ -19,18 +19,18 @@ int main()
             scanf("%d", &type);
             switch (type){
                 case 1:
-                    freopen("../input/array_seed_thousand_random.txt", "w", stdout);
+                    freopen("./input/array_seed_thousand_random.txt", "w", stdout);
                     seedArray(seed, n, true);
                     shuffle(seed, n);
                     break;
 
                 case 2:
-                    freopen("../input/array_seed_thousand_ascending.txt", "w", stdout);
+                    freopen("./input/array_seed_thousand_ascending.txt", "w", stdout);
                     seedArray(seed, n, true);
                     break;
 
                 case 3:
-                    freopen("../input/array_seed_thousand_descending.txt", "w", stdout);
+                    freopen("./input/array_seed_thousand_descending.txt", "w", stdout);
                     seedArray(seed, n, false);
                     break;
 
@@ -46,16 +46,16 @@ int main()
             scanf("%d", &type);
             switch (type){
                 case 1:
-                    freopen("../input/array_seed_ten_thousand_random.txt", "w", stdout);
+                    freopen("./input/array_seed_ten_thousand_random.txt", "w", stdout);
                     seedArray(seed, n, true);
                     shuffle(seed, n);
                     break;
                 case 2:
-                    freopen("../input/array_seed_ten_thousand_ascending.txt", "w", stdout);
+                    freopen("./input/array_seed_ten_thousand_ascending.txt", "w", stdout);
                     seedArray(seed, n, true);
                     break;
                 case 3:
-                    freopen("../input/array_seed_ten_thousand_descending.txt", "w", stdout);
+                    freopen("./input/array_seed_ten_thousand_descending.txt", "w", stdout);
                     seedArray(seed, n, false);
                     break;
                 default:
@@ -70,16 +70,16 @@ int main()
             scanf("%d", &type);
             switch (type){
                 case 1:
-                    freopen("../input/array_seed_hundred_thousand_random.txt", "w", stdout);
+                    freopen("./input/array_seed_hundred_thousand_random.txt", "w", stdout);
                     seedArray(seed, n, true);
                     shuffle(seed, n);
                     break;
                 case 2:
-                    freopen("../input/array_seed_hundred_thousand_ascending.txt", "w", stdout);
+                    freopen("./input/array_seed_hundred_thousand_ascending.txt", "w", stdout);
                     seedArray(seed, n, true);
                     break;
                 case 3:
-                    freopen("../input/array_seed_hundred_thousand_descending.txt", "w", stdout);
+                    freopen("./input/array_seed_hundred_thousand_descending.txt", "w", stdout);
                     seedArray(seed, n, false);
                     break;
                 default:
@@ -94,16 +94,16 @@ int main()
             scanf("%d", &type);
             switch (type){
                 case 1:
-                    freopen("../input/array_seed_million_random.txt", "w", stdout);
+                    freopen("./input/array_seed_million_random.txt", "w", stdout);
                     seedArray(seed, n, true);
                     shuffle(seed, n);
                     break;
                 case 2:
-                    freopen("../input/array_seed_million_ascending.txt", "w", stdout);
+                    freopen("./input/array_seed_million_ascending.txt", "w", stdout);
                     seedArray(seed, n, true);
                     break;
                 case 3:
-                    freopen("../input/array_seed_million_descending.txt", "w", stdout);
+                    freopen("./input/array_seed_million_descending.txt", "w", stdout);
                     seedArray(seed, n, false);
                     break;
                 default:
