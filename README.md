@@ -3,10 +3,12 @@
 
 ## Test Cases
 
-Array of integers with size of 1k, 10k, 100k, and 1m with the following arrangements:
+Array of integers with size of 1k, 10k, 100k, 250k, 450k, 850k, 950k, and 1m with the following arrangements:
 - Randomly ordered
 - Ascending order
 - Descending order
+
+>All input arrays are stored in the `input` directory.
 
 ## Usage
 1. Clone this repository
