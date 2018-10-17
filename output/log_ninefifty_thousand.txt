@@ -1,0 +1,52 @@
+RANDOM
+
+Enter array size:
+Enter 950000 elements:
+Merge Sort
+Total comparisons done: 17675781
+Total CPU time: 0.211552 (seconds)
+
+
+Enter array size:
+Enter 950000 elements:
+Insertion Sort
+Total comparisons done: 216971568481
+Total CPU time: 1048.897723 (seconds)
+
+
+
+ASCENDING
+
+
+Enter array size:
+Enter 950000 elements:
+Merge Sort
+Total comparisons done: 9582752
+Total CPU time: 0.106459 (seconds)
+
+
+
+Enter array size:
+Enter 950000 elements:
+Insertion Sort
+Total comparisons done: 949999
+Total CPU time: 0.004574 (seconds)
+
+
+DESCENDING
+
+Enter array size:
+Enter 950000 elements:
+Merge Sort
+Total comparisons done: 9318672
+Total CPU time: 0.116004 (seconds)
+
+
+
+Enter array size:
+Enter 950000 elements:
+Insertion Sort
+Total comparisons done: 451249525000
+Total CPU time: 2209.376793 (seconds)
+
+
